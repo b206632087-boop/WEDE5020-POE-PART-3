@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO - Homepage is most important -->
+    <title>Tumi's Bakery | Fresh Cakes & Pastries in Pretoria</title>
+    <meta name="description" content="Tumi's Bakery Pretoria - Fresh bread, custom birthday and wedding cakes baked daily. Order online, delivery in Pretoria.">
+    <meta name="keywords" content="bakery Pretoria, Tumi's Bakery, birthday cakes, wedding cakes, fresh bread Pretoria">
+    <link rel="canonical" href="https://tumis-bakery.netlify.app/index.html">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For map in contact but load here for speed -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Tumi's Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="fade-in">
+            <h2>Freshly Baked Daily in Pretoria</h2>
+            <p>From sourdough to custom wedding cakes — we bake with love.</p>
+            <a href="services.html"><button>View Our Menu</button></a>
+            <a href="enquiries.html"><button>Order Now</button></a>
+        </section>
+
+        <!-- Featured Products - JS will load this dynamically -->
+        <section class="fade-in">
+            <h3>Best Sellers</h3>
+            <input type="text" id="searchInput" placeholder="Search our bakes..." onkeyup="filterContent()">
+            <div id="content-container"></div>
+        </section>
+
+        <!-- Gallery Lightbox - Part 3 Requirement -->
+        <section class="fade-in">
+            <h3>Our Bakery Gallery</h3>
+            <div class="gallery">
+                <img src ="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80" class="lightbox-thumb" alt="Chocolate cake baked in Pretoria at Tumi's Bakery" loading="lazy" width="300">
+                <img src="https://images.stockcake.com/public/9/9/b/99b29650-28ab-46ac-a144-4730226b70d6_large/steaming-artisanal-croissants-stockcake.jpg" class="lightbox-thumb" alt="Croissants and pastries Pretoria" loading="lazy" width="300">
+                <img src="https://juliemarieeats.com/wp-content/uploads/2024/01/Classic-Vanilla-Birthday-Cake-6-1-scaled.jpg" class="lightbox-thumb" alt="Vanilla birthday cake pretoria" loading="lazy" width="300">
+                <img src="https://mexicantownbakery.com/cdn/shop/products/PhotoRoom_20211129_091135_1024x1024.png?v=1638296292" class="lightbox-thumb" alt="Wedding cake from Tumi's Bakery" loading="lazy" width="300">
+            </div>
+            <!-- Lightbox popup -->
+            <div id="lightbox"><span onclick="this.parentElement.style.display='none'">&times;</span><img id="lightbox-img"></div>
+        </section>
+
+        <!-- Accordion FAQ -->
+        <section class="fade-in">
+            <h3>Quick FAQ</h3>
+            <button class="accordion-header">Do you deliver in Pretoria?</button>
+            <div class="accordion-content"><p>Yes, R50 delivery, free over R500. Order via <a href="enquiries.html">Enquiry form</a></p></div>
+            
+            <button class="accordion-header">How far in advance for wedding cakes?</button>
+            <div class="accordion-content"><p>7 days minimum. Custom orders from R1500.</p></div>
+        </section>
+
+        <!-- Map - Shows you know JS APIs -->
+        <section class="fade-in">
+            <h3>Find Us</h3>
+            <div id="map" style="height: 300px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Tumi's Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- WHERE TO ADD js/main.js - RIGHT HERE AT BOTTOM -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
+  

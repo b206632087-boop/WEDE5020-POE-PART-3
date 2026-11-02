@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tumi's Bakery | Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="enquiries.html">Enquiries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   </header>
+   
+   <main>
+    <h2>Contact Tumi's Bakery</h2>
+    <p>we'd love to hear from you! Visit us , call us,  or send a message.</p>
+
+    <section>
+        <h3>Get in Touch</h3>
+        <ul>
+            <li><b>Phone:</b> <a href="tel: +27 82 123 4567"> 082 123 4567</a></li>
+            <li><b>Email:</b> <a href="mailto: tumisbakery@gmail.com>tumishobakery@gmail.com</a></li>
+            <li><b>WhatsApp:</b> <button onclick="sendWhatsAppOrder()">Chat with us</button></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Visit Us</h3>
+        <p><b>Address:</b> 123 Church Street, Pretoria, Gauteng, 0001</p>
+        <p><b>Opening Hours:</b> Monday - Friday: 8am - 6pm, Saturday: 9am - 4pm, Sunday: Closed</p>
+    </section>
+  
+    <section>
+        <h3>Send Us A Quick Message</h3>
+   <form>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+    
+        
+   </main>
+
+   <footer>
+    <p>&copy; <span id="year></span> Tumi's Bakery. All rights reserved.</p>
+   </footer>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
